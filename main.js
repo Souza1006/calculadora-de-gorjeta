@@ -34,3 +34,20 @@ function receiveTipPercentageValue(value) {
     calculate()
 }
 
+function receiveCustomTipPercentageValue() {
+    tipPercentage = document.querySelector("#custom-tip").valueAsNumber / 100
+
+    removeClassButtonSelected()
+
+    calculate()
+}
+
+function removeClassButtonSelected() {
+    if(buttonSelected !== null) {
+        buttonSelected.classList.remove("button-selected")
+        buttonSelected = null
+    }
+}
+
+function calculate() {
+    
